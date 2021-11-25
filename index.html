@@ -22,14 +22,17 @@
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700&display=swap");
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        font-family: "Be Vietnam", sans-serif;
       }
 
       body {
         font-size: 16px;
+        color: hsl(228, 39%, 23%);
         padding: 0 10rem;
       }
 
@@ -69,16 +72,25 @@
       .btn-get-started:hover {
         cursor: pointer;
         background-color: hsla(12, 88%, 59%, 0.7);
-        /* background-color: hsl(13, 100%, 96%); */
       }
 
-      /* .attribution {
-        font-size: 11px;
-        text-align: center;
+      section.hero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
       }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      } */
+
+      section.hero div:first-child {
+        width: 40%;
+      }
+
+      section.hero h1 {
+        font-size: 3rem;
+      }
+      section.hero p {
+        color: hsl(227, 12%, 61%);
+        padding: 2rem 0;
+      }
     </style>
   </head>
   <body>
