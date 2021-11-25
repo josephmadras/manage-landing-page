@@ -22,13 +22,63 @@
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
-      .attribution {
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-size: 16px;
+        padding: 0 10rem;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 0;
+      }
+
+      header nav ul {
+        list-style: none;
+        display: flex;
+      }
+
+      header nav li {
+        width: 100px;
+      }
+
+      header nav a {
+        text-decoration: none;
+        color: hsl(228, 39%, 23%);
+        font-weight: 600;
+      }
+
+      header nav a:hover {
+        color: hsl(227, 12%, 61%);
+      }
+      .btn-get-started {
+        padding: 0.7rem 1.2rem;
+        border: none;
+        border-radius: 1.2rem;
+        color: hsl(0, 0%, 98%);
+        background-color: hsl(12, 88%, 59%);
+        box-shadow: hsla(12, 88%, 59%, 0.5) 0px 3px 8px;
+      }
+
+      .btn-get-started:hover {
+        cursor: pointer;
+        background-color: hsla(12, 88%, 59%, 0.7);
+        /* background-color: hsl(13, 100%, 96%); */
+      }
+
+      /* .attribution {
         font-size: 11px;
         text-align: center;
       }
       .attribution a {
         color: hsl(228, 45%, 44%);
-      }
+      } */
     </style>
   </head>
   <body>
@@ -36,15 +86,18 @@
       <div>
         <img src="./images/logo.svg" alt="logo" />
       </div>
-      <ul>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#product">Product</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#careers">Careers</a></li>
-        <li><a href="#community">Community</a></li>
-      </ul>
+      <nav>
+        <ul>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#product">Product</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#careers">Careers</a></li>
+          <li><a href="#community">Community</a></li>
+        </ul>
+      </nav>
+
       <div>
-        <button>Get Started</button>
+        <button class="btn-get-started">Get Started</button>
       </div>
     </header>
     <main>
@@ -56,7 +109,7 @@
             while keeping the larger team goals in view.
           </p>
           <div>
-            <button>Get Started</button>
+            <button class="btn-get-started">Get Started</button>
           </div>
         </div>
         <div>
@@ -151,13 +204,13 @@
           </div>
         </div>
         <div>
-          <button>Get Started</button>
+          <button class="btn-get-started">Get Started</button>
         </div>
       </section>
 
       <section>
         <h2>Simplify how your team works today.</h2>
-        <div><button>Get Started</button></div>
+        <div><button class="btn-get-started">Get Started</button></div>
       </section>
     </main>
 
@@ -205,11 +258,11 @@
       </div>
     </footer>
 
-    <div class="attribution">
+    <!-- <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Joseph Kabemba</a>.
-    </div>
+    </div> -->
   </body>
 </html>
