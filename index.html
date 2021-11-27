@@ -34,6 +34,7 @@
         font-size: 16px;
         color: hsl(228, 39%, 23%);
         padding: 0 10rem;
+        /* background-image: url("./images/bg-simplify-section-mobile.svg"); */
       }
 
       header {
@@ -74,10 +75,17 @@
         background-color: hsla(12, 88%, 59%, 0.7);
       }
 
+      main p {
+        color: hsl(227, 12%, 61%);
+        padding: 2rem 0;
+        line-height: 1.5rem;
+      }
+
       section.hero {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 2.5rem 0;
       }
 
       section.hero div:first-child {
@@ -90,6 +98,45 @@
       section.hero p {
         color: hsl(227, 12%, 61%);
         padding: 2rem 0;
+      }
+
+      section.whats-different {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      section.whats-different > div:first-child {
+        width: 70%;
+      }
+
+      section.whats-different div:first-child h2 {
+        font-size: 2rem;
+      }
+
+      section.whats-different div.options {
+        margin-left: 100px;
+      }
+      section.whats-different div.options > div {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      section.whats-different .options span {
+        background-color: hsl(12, 88%, 59%);
+        padding: 10px 20px;
+        height: 35px;
+        text-align: center;
+        color: hsl(0, 0%, 98%);
+        border-radius: 20px;
+      }
+
+      section.whats-different .options .options-item {
+        margin-left: 20px;
+      }
+
+      section.whats-different .options .options-item p {
+        padding-right: 10px;
       }
     </style>
   </head>
@@ -130,16 +177,19 @@
       </section>
 
       <section class="whats-different">
-        <h2>What’s different about Manage?</h2>
-        <p>
-          Manage provides all the functionality your team needs, without the
-          complexity. Our software is tailor-made for modern digital product
-          teams.
-        </p>
+        <div>
+          <h2>What’s different about Manage?</h2>
+          <p>
+            Manage provides all the functionality your team needs, without the
+            complexity. Our software is tailor-made for modern digital product
+            teams.
+          </p>
+        </div>
+
         <div class="options">
           <div>
             <span>01</span>
-            <div>
+            <div class="options-item">
               <h3>Track company-wide progress</h3>
               <p>
                 See how your day-to-day tasks fit into the wider vision. Go from
@@ -152,7 +202,7 @@
 
           <div>
             <span>02</span>
-            <div>
+            <div class="options-item">
               <h3>Advanced built-in reports</h3>
               <p>
                 Set internal delivery estimates and track progress toward
@@ -164,7 +214,7 @@
 
           <div>
             <span> 03</span>
-            <div>
+            <div class="options-item">
               <h3>Everything you need in one place</h3>
               <p>
                 Stop jumping from one service to another to communicate, store
