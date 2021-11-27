@@ -62,7 +62,7 @@
         color: hsl(227, 12%, 61%);
       }
       .btn-get-started {
-        padding: 0.7rem 1.2rem;
+        padding: 0.7rem 1.5rem;
         border: none;
         border-radius: 1.2rem;
         color: hsl(0, 0%, 98%);
@@ -137,6 +137,41 @@
 
       section.whats-different .options .options-item p {
         padding-right: 10px;
+      }
+
+      section.testimonials {
+        padding: 4rem 0;
+      }
+      section.testimonials h2 {
+        text-align: center;
+        font-size: 2rem;
+      }
+
+      section.testimonials .card-container {
+        /* display: flex; */
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        padding: 7rem 0 5rem 0;
+      }
+
+      section.testimonials > div:last-child {
+        display: flex;
+        justify-content: center;
+      }
+      section.testimonials .card-container > div {
+        text-align: center;
+        background-color: #fafafa;
+        padding: 0 1rem;
+      }
+
+      section.testimonials img {
+        width: 80px;
+        margin-top: -50px;
+      }
+
+      section.testimonials h4 {
+        padding-top: 2rem;
       }
     </style>
   </head>
